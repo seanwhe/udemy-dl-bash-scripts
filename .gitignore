@@ -1,6 +1,9 @@
 # folders
 udemy-dl/
+udemy-dl/*
 downloads/
+downloads/*
+
 
 # files
 cookies.txt
