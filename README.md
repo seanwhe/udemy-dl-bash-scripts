@@ -48,14 +48,13 @@ Some knowledge of:
 
 Defaults - The settings.sh contains a number of variables. All files and folders created during install and required for runtime are kept in the directory `~/udemy-dl-bash-scripts/`.
 
-During install the folder source for [udemy-dl](https://github.com/r0oth3x49/udemy-dl) is clones into `~/udemy-dl-bash-scripts/`. A folder named `download` is also created and will be the location where courses are downloaded to. Also created is a `cookies.sh` and `courses.txt`. The `cookies.txt` will be created with the value of your access token from _UDEMY_ACCESS_TOKEN. The `courses.txt` is for you to add URL's to the courses you wish to download. Each course URL must be on a single line to create a list. Lastly, for ease of use udemy-dl.py is soft linked.
-
-For example:
+During install the folder source for [udemy-dl](https://github.com/r0oth3x49/udemy-dl) is cloned into `~/udemy-dl-bash-scripts/`. A folder named `download` is also created and will be the location where courses are downloaded to. 
+Also created is a `cookies.sh` and `courses.txt`. The `cookies.txt` will be created with the value of your access token from `_UDEMY_ACCESS_TOKEN`. The `courses.txt` is for you to add URL's to the courses you wish to download. Each course URL must be on a single line to create a list. Example of courses.txt:
 `https://www.udemy.com/some-course-name/learn/`
-
 `https://www.udemy.com/another-course-name/learn/`
-
 `https://www.udemy.com/someother-course-name/learn/`
+
+Lastly, for ease of use udemy-dl.py is soft linked in the `~/udemy-dl-bash-scripts/` directory.
 
 What follows is a brief of the shell scripts you will find. The names are mostly self explanatory.
 Comments and notes are used liberally in the scripts to help give you hints as to how it works.
@@ -69,13 +68,13 @@ The scripts are designed to be modular to promote resuse, execute exclusion and 
 * start.sh - starts udemy-dl.py passing cookies for access token and course list to download.
 
 ### Viewing the log
-It is recommended to run these scripts in a screen session.
+It is recommended to run these scripts in a screen session. The output is to std_out so you can watch as it runs.
 
 ### Updating
 A simple `git update` in `~/udemy-dl-bash-scripts` will update these scripts.
 
 The install script can be run at any time to update the source found `~/udemy-dl-bash-scripts/udemy-dl`.
-The branch checkout is taken from the `_UDL_BRANCH` variable in `settings.sh`.
+The branch checkout is taken from the `_UDL_BRANCH` variable in `settings.sh`. The default branch is set to `master`.
 
 A script named update.sh is provided to perform both these steps in a single command.
 
