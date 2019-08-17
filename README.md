@@ -39,7 +39,7 @@ Some knowledge of:
    `./install.sh`
 1. Add URL's to courses in courses.txt
    1. One URL per line
-   1. https://www.udemy.com/<some-course-name>/learn/
+   1. https://www.udemy.com/some-course-name/learn/
 1. Run the start script
    `./start.sh`
 
@@ -51,9 +51,9 @@ Defaults - The settings.sh contains a number of variables. All files and folders
 During install the folder source for [udemy-dl](https://github.com/r0oth3x49/udemy-dl) is clones into `~/udemy-dl-bash-scripts/`. A folder named `download` is also created and will be the location where courses are downloaded to. Also created is a `cookies.sh` and `courses.txt`. The `cookies.txt` will be created with the value of your access token from _UDEMY_ACCESS_TOKEN. The `courses.txt` is for you to add URL's to the courses you wish to download. Each course URL must be on a single line to create a list. Lastly, for ease of use udemy-dl.py is soft linked.
 
 For example:
-https://www.udemy.com/<some-course-name>/learn/
-https://www.udemy.com/<another-course-name>/learn/
-https://www.udemy.com/<someother-course-name>/learn/
+https://www.udemy.com/some-course-name/learn/
+https://www.udemy.com/another-course-name/learn/
+https://www.udemy.com/someother-course-name/learn/
 
 What follows is a brief of the shell scripts you will find. The names are mostly self explanatory.
 Comments and notes are used liberally in the scripts to help give you hints as to how it works.
