@@ -16,6 +16,8 @@ At the start the expectation is that you have:
 * Bash shell
 * User account with sudo privileges
 * Installed git
+* User account on http://udemy.com
+* Course you have purchased
 
 ### Agreeable
 
