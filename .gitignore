@@ -1,8 +1,10 @@
-# files and folders
-.udemy-dl/
-.downloads/
+# folders
+udemy-dl/
+downloads/
 
-# Executables
+# files
 cookies.txt
 courses.txt
 
+# File extensions
+*.swp
