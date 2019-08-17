@@ -7,6 +7,7 @@
 # files
 cookies.txt
 courses.txt
+udemy-dl.py
 
 # File extensions
 *.swp
